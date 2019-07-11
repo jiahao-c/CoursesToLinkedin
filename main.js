@@ -50,7 +50,7 @@ const pptr = require('puppeteer');
 
   //go to course-add
   await linkedin.goto('https://www.linkedin.com/in/');
-  await linkedin.waitForSelector('.pv-top-card-section');
+  await linkedin.waitForSelector('#profile-wrapper');
   const newCourseURL = linkedin.url() + 'edit/course/new/';
 
   //add courses record one-by-one
