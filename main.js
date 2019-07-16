@@ -73,7 +73,7 @@ const pptr = require('puppeteer');
     }
     const submitButton = (await linkedin.$$("button[type='submit']"))[1];
     await submitButton.click();
-    await linkedin.waitForSelector('.pv-top-card-section');
+    await linkedin.waitFor(() => !document.querySelector("button[type='submit']"));
   }
   await browser.close(); 
 })();
