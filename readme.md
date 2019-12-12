@@ -21,5 +21,5 @@ If you don't have node.js, you may install with homebrew or go [nodejs.org](http
 - Install dependency (node, puppeteer)
 - Download `main.js`
 - Fill in your credentials
-- Run with `npm main.js`
+- Run with `node main.js`
 - (optional) change `headless: false` to `headless: true`, so that the browser does not show up.
