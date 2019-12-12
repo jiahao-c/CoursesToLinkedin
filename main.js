@@ -47,7 +47,7 @@ const pptr = require('puppeteer');
   await linkedin.click('#password');
   await linkedin.keyboard.type(LI_PW);
   await linkedin.click('.btn__primary--large.from__button--floating');
-  await linkedin.waitForSelector("a[data-control-name='identity_welcome_message']");
+  await linkedin.waitForSelector('#feed-nav-item'); //confirm success logged in
 
   //go to course-add
   await linkedin.goto('https://www.linkedin.com/in/');
