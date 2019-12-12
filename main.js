@@ -18,6 +18,7 @@ const pptr = require('puppeteer');
 
   //log in minerva
   await minerva.goto(baseURL + 'twbkwbis.P_WWWLogin');
+  await minerva.waitForSelector('#mcg_un');
   await minerva.type('#mcg_un', MG_USR);
   await minerva.type('#mcg_pw', MG_PW);
   await minerva.click('#mcg_un_submit');
